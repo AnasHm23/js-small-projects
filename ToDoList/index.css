@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("images/todolist.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h3 {
+    color: rgb(191, 194, 197);
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container h5 {
+    color: rgb(69, 57, 45);
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    font-size: medium;
+    background-color: antiquewhite;
+    margin-bottom: 7px;
+    border-radius: 5px;
+}
+
+input:focus {
+    font-size: medium;
+    transform: scaleX(2);
+
+}
+
+button {
+    background: linear-gradient(135deg, #6c4d20, #074a5a);
+    border-radius: 5px;
+}
+
+button:hover,
+ul li:hover {
+    cursor: pointer;
+}
+
+ul li {
+    padding: 5px;
+    text-decoration: underline;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(245, 13, 13);
+}

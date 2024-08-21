@@ -14,7 +14,7 @@ The Dynamic To-Do List is a simple web application built using vanilla JavaScrip
 
 ## Live Demo
 
-[img](#) *()*
+![image](https://github.com/Anashm24/js-small-projects/blob/main/ToDoList/images/Screenshot%202024-08-21%20223434.png)
 
 ## Getting Started
 

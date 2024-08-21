@@ -73,4 +73,4 @@ Welcome to the JavaScript Mini Projects repository! This repository contains a c
 To get a local copy of this repository, clone it using the following command:
 
 ```bash
-git clone https://github.com/Anashm24/javascript-mini-projects.git
+git clone https://github.com/Anashm24/js-small-projects

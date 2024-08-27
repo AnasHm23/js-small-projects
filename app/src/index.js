@@ -1,23 +1,39 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-// here we all the components are located
-export const Greeting = () => {
+const BookList = () => {
   return (
-    <div>
-      <p>
-        hello <Person />, you have to hear this Message,
-        <Message />
-      </p>
-    </div>
+    <section className="booklist">
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
 };
 
-const Person = () => <span>anas houmaid</span>;
-const Message = () => {
-  return <span>stop worring things are going to be alright inchallah</span>;
+const Book = () => {
+  return (
+    <article className="book">
+      <Title />
+      <Image />
+      <Author />
+    </article>
+  );
 };
 
-root.render(<Greeting />);
+const Image = () => (
+  <img
+    src="https://images-na.ssl-images-amazon.com/images/I/9101MLPcFTL._AC_UL900_SR900,600_.jpg"
+    alt="Book cover of Onyx Storm"
+  />
+);
+const Title = () => <h2>Onyx Storm</h2>;
+const Author = () => {
+  return <h4>Rebecca Yarros</h4>;
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<BookList />);
+
+export default BookList;

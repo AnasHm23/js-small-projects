@@ -2,6 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
+const title = "Onyx Storm";
+const img =
+  "https://images-na.ssl-images-amazon.com/images/I/9101MLPcFTL._AC_UL900_SR900,600_.jpg";
+const author = "Rebecca Yarros";
+
 const BookList = () => {
   return (
     <section className="booklist">
@@ -15,22 +20,11 @@ const BookList = () => {
 const Book = () => {
   return (
     <article className="book">
-      <Title />
-      <Image />
-      <Author />
+      <h2>{title}</h2>
+      <img src={img} alt={title} />
+      <h4>{author}</h4>
     </article>
   );
-};
-
-const Image = () => (
-  <img
-    src="https://images-na.ssl-images-amazon.com/images/I/9101MLPcFTL._AC_UL900_SR900,600_.jpg"
-    alt="Book cover of Onyx Storm"
-  />
-);
-const Title = () => <h2>Onyx Storm</h2>;
-const Author = () => {
-  return <h4>Rebecca Yarros</h4>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

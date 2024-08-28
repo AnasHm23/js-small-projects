@@ -12,6 +12,7 @@ body {
 }
 
 .booklist {
+  position: relative;
   width: 90vw;
   max-width: 1170px;
   margin: 5px auto;
@@ -26,6 +27,7 @@ body {
 }
 
 .book {
+  position: relative;
   background-color: white;
   padding: 2rem;
   border-radius: 2rem;
@@ -41,4 +43,24 @@ body {
   margin-bottom: 1rem;
   font-style: italic;
   color: rgb(101, 97, 97);
+}
+
+span {
+  position: absolute;
+  font-weight: bold;
+  width: 15%;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  background: rgb(255, 230, 183);
+  color: rgb(104, 90, 73);
+  cursor: pointer;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 15px;
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+  color: rgb(68, 61, 47);
 }
